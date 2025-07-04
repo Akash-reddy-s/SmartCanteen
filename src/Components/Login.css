@@ -1,12 +1,16 @@
-/*body {
+.Login-Wrapper {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #3378e8, #6497f0);
+  background-image: url("/public/assets/loginback.jpeg");
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+
+}
 
 .login-container {
   background: #ffffff;
@@ -15,6 +19,8 @@
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
+  position: relative;
+
 }
 
 .login-title {

@@ -22,6 +22,8 @@ const Food = () => {
   }, [sessionId]);
 
   return (
+  <div>
+    
     <div className="home-page">
       <section className="hero-section">
         <div className="hero-text">
@@ -76,6 +78,7 @@ const Food = () => {
       </section>
 
       <Footer />
+    </div>
     </div>
   );
 };
