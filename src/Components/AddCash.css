@@ -1,0 +1,60 @@
+.add-cash-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px 20px;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.add-cash-container h2 {
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.cash-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 10px;
+}
+
+.cash-form input {
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #2d2d2d;
+  color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.cash-form input::placeholder {
+  color: #bbbbbb;
+}
+
+.cash-form input:focus {
+  background-color: #383838;
+}
+
+.cash-form button {
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cash-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 114, 255, 0.3);
+}

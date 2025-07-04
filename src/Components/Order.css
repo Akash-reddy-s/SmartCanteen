@@ -1,0 +1,47 @@
+
+.orders-container {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #000000, #757e89);
+  min-height: 100vh;
+}   
+
+.orders-container h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+  text-decoration: dotted;
+}
+
+.orders-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.order-card {
+  background: linear-gradient(to right, #ffffff, #313131);
+  border: 1px solid #000000;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.order-card:hover {
+  transform: scale(1.02);
+}
+
+.order-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.highlight-order {
+  border: 2px solid #ffffff;
+  background-color: #e8f5e9;
+}
+
