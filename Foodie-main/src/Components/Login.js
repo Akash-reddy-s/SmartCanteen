@@ -1,3 +1,4 @@
+// filepath: /home/akash-intain/Akash/Foodie-main/src/Components/Login.js
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './Login.css';
@@ -5,16 +6,16 @@ import './Login.css';
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
-    const users = JSON.parse(localStorage.getItem("users") || "{}");
-    if (users[username] && users[username] === password) {
-      navigate("/home");
+    if (username === "admin" && password === "admin") {
+      localStorage.setItem("session_id", "admin-session");
+      navigate("/admin");
     } else {
-      setError("Invalid username or password");
+      localStorage.setItem("session_id", username);
+      navigate("/home");
     }
   };
 
@@ -22,8 +23,7 @@ function Login() {
     <div className="Login-Wrapper">
       <div className="login-container">
         <form className="login-form" onSubmit={handleLogin}>
-          <h2 className="login-title">Login</h2>
-          {error && <div style={{ color: "red", marginBottom: "10px" }}>{error}</div>}
+          <h2 className="login-title">Welcome</h2>
           <label htmlFor="username" className="login-label">Username</label>
           <input
             id="username"
@@ -33,6 +33,7 @@ function Login() {
             onChange={(e) => setUsername(e.target.value)}
             required
           />
+
           <label htmlFor="password" className="login-label">Password</label>
           <input
             id="password"
@@ -42,16 +43,8 @@ function Login() {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
+
           <button type="submit" className="login-button">Login</button>
-          <br />
-          <button
-            type="button"
-            onClick={() => navigate("/signup")}
-            className="login-button"
-            style={{ marginTop: "10px" }}
-          >
-            Sign Up
-          </button>
         </form>
       </div>
     </div>

@@ -46,7 +46,6 @@ body {
   cursor: pointer;
 }
 
-/* Highlights */
 .highlights {
   display: flex;
   justify-content: space-around;
@@ -66,7 +65,7 @@ body {
   margin: 20px;
 }
 
-/* Wallet Section */
+
 .wallet-section {
   text-align: center;
   padding: 40px 20px;
@@ -94,7 +93,6 @@ body {
   font-size: 1rem;
 }
 
-/* Feature Cards */
 .feature-cards {
   display: flex;
   justify-content: center;
